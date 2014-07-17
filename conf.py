@@ -93,7 +93,7 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 # (the same way you would do with a (translatable) setting.)
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("http://idl.utsa.edu/jtfoster/cv/", "CV"),
+        ("/cv.html", "CV"),
         ("http://johntfoster.github.io/", "Blog"),
         ("/archive.html", "Archive"),
         ("/categories/index.html", "Tags"),
@@ -161,10 +161,14 @@ TIMEZONE = "America/Chicago"
 #
 
 POSTS = (
+    ("posts/*.ipynb", "posts", "post.tmpl"),
+    ("posts/*.md", "posts", "post.tmpl"),
     ("posts/*.rst", "posts", "post.tmpl"),
     ("posts/*.txt", "posts", "post.tmpl"),
 )
 PAGES = (
+    ("stories/*.ipynb", "stories", "story.tmpl"),
+    ("stories/*.md", "stories", "story.tmpl"),
     ("stories/*.rst", "stories", "story.tmpl"),
     ("stories/*.txt", "stories", "story.tmpl"),
 )
