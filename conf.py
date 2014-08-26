@@ -25,7 +25,7 @@ SITE_URL = "http://johntfoster.github.io/johntfoster-professional-website/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://johntfoster.github.io/johntfoster-professional-website/"
-BLOG_EMAIL = "johntfosterjr@gmail.com"
+BLOG_EMAIL = "jfoster@austin.utexas.edu"
 BLOG_DESCRIPTION = "Professional website"  # (translatable)
 
 # Nikola is multilingual!
@@ -93,11 +93,9 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 # (the same way you would do with a (translatable) setting.)
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/cv.html", "CV"),
-        ("http://johntfoster.github.io/", "Blog"),
-        ("/archive.html", "Archive"),
-        ("/categories/index.html", "Tags"),
-        ("/rss.xml", "RSS feed"),
+        ("/cv/", "CV"),
+        ("/calendar/", "Calendar"),
+        ("http://johntfoster.github.io/", "Personal Blog"),
     ),
 }
 
@@ -171,12 +169,14 @@ PAGES = (
     ("stories/*.md", "stories", "story.tmpl"),
     ("stories/*.rst", "stories", "story.tmpl"),
     ("stories/*.txt", "stories", "story.tmpl"),
+    ("calendar/*.md", "calendar", "notitle.tmpl"),
+    ("cv/*.rst", "cv", "notitle.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
 # The format is a dictionary of "source" "relative destination".
 # Default is:
-# FILES_FOLDERS = {'files': '' }
+#FILES_FOLDERS = {'files': 'cv/' }
 # Which means copy 'files' into 'output'
 
 # A mapping of languages to file-extensions that represent that language.
@@ -188,7 +188,7 @@ PAGES = (
 # 'html' assumes the file is html and just copies it
 COMPILERS = {
     "rest": ('.rst', '.txt'),
-    "markdown": ('.md', '.mdown', '.markdown'),
+    #"markdown": ('.md', '.mdown', '.markdown'),
     "textile": ('.textile',),
     "txt2tags": ('.t2t',),
     "bbcode": ('.bb',),
@@ -202,7 +202,7 @@ COMPILERS = {
     # Pandoc detects the input from the source filename
     # but is disabled by default as it would conflict
     # with many of the others.
-    # "pandoc": ('.rst', '.md', '.txt'),
+    "pandoc": ('.md',),
 }
 
 # Create by default posts in one file format?
@@ -428,7 +428,7 @@ RSS_READ_MORE_LINK = '<p><a href="{link}">{read_more}…</a> ({min_remaining_rea
 
 # A HTML fragment describing the license, for the sidebar.
 # (translatable)
-LICENSE = ""
+LICENSE = """<a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>."""
 # I recommend using the Creative Commons' wizard:
 # http://creativecommons.org/choose/
 # LICENSE = """
@@ -500,7 +500,7 @@ COMMENT_SYSTEM_ID = ""
 # it will instead /foo/default.html => /foo)
 # (Note: This was briefly STRIP_INDEX_HTML in v 5.4.3 and 5.4.4)
 # Default = False
-# STRIP_INDEXES = False
+STRIP_INDEXES = False
 
 # Should the sitemap list directories which only include other directories
 # and no files.
@@ -575,7 +575,7 @@ COMMENT_SYSTEM_ID = ""
 # Social buttons. This is sample code for AddThis (which was the default for a
 # long time). Insert anything you want here, or even make it empty.
 # (translatable)
-# SOCIAL_BUTTONS_CODE = """
+SOCIAL_BUTTONS_CODE = """ """
 # <!-- Social buttons -->
 # <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
 # <a class="addthis_button_more">Share</a>
