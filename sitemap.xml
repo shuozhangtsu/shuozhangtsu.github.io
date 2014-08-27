@@ -6,22 +6,26 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://johntfoster.github.io/johntfoster-professional-website/archive.html</loc>
-  <lastmod>2014-08-26</lastmod>
+  <lastmod>2014-08-27</lastmod>
  </url>
  <url>
   <loc>http://johntfoster.github.io/johntfoster-professional-website/calendar/index.html</loc>
-  <lastmod>2014-08-26</lastmod>
+  <lastmod>2014-08-27</lastmod>
  </url>
  <url>
   <loc>http://johntfoster.github.io/johntfoster-professional-website/categories/index.html</loc>
-  <lastmod>2014-08-26</lastmod>
+  <lastmod>2014-08-27</lastmod>
  </url>
  <url>
   <loc>http://johntfoster.github.io/johntfoster-professional-website/cv/index.html</loc>
-  <lastmod>2014-08-26</lastmod>
+  <lastmod>2014-08-27</lastmod>
  </url>
  <url>
   <loc>http://johntfoster.github.io/johntfoster-professional-website/index.html</loc>
-  <lastmod>2014-08-26</lastmod>
+  <lastmod>2014-08-27</lastmod>
+ </url>
+ <url>
+  <loc>http://johntfoster.github.io/johntfoster-professional-website/repos/index.html</loc>
+  <lastmod>2014-08-27</lastmod>
  </url>
 </urlset>
