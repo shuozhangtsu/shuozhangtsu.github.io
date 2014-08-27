@@ -95,6 +95,7 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/cv/", "CV"),
         ("/calendar/", "Calendar"),
+        ("/repos/", "Paper Repositories"),
         ("http://johntfoster.github.io/", "Personal Blog"),
     ),
 }
@@ -171,6 +172,7 @@ PAGES = (
     ("stories/*.txt", "stories", "story.tmpl"),
     ("calendar/*.md", "calendar", "notitle.tmpl"),
     ("cv/*.rst", "cv", "notitle.tmpl"),
+    ("repos/*.md", "repos", "notitle.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
