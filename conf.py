@@ -167,7 +167,7 @@ POSTS = (
 )
 PAGES = (
     ("stories/*.ipynb", "stories", "story.tmpl"),
-    ("stories/*.md", "stories", "story.tmpl"),
+    ("stories/*.md", "", "story.tmpl"),
     ("stories/*.rst", "stories", "story.tmpl"),
     ("stories/*.txt", "stories", "story.tmpl"),
     ("calendar/*.md", "calendar", "notitle.tmpl"),
@@ -178,7 +178,7 @@ PAGES = (
 # One or more folders containing files to be copied as-is into the output.
 # The format is a dictionary of "source" "relative destination".
 # Default is:
-#FILES_FOLDERS = {'files': 'cv/' }
+FILES_FOLDERS = {'files': 'files' }
 # Which means copy 'files' into 'output'
 
 # A mapping of languages to file-extensions that represent that language.
@@ -242,7 +242,7 @@ LOGO_URL = '/assets/img/cockrell_school_logo_white.svg'
 
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
-# INDEX_PATH = ""
+INDEX_PATH = "blog"
 
 # Create per-month archives instead of per-year
 # CREATE_MONTHLY_ARCHIVE = False
