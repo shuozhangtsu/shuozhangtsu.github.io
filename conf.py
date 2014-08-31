@@ -103,6 +103,7 @@ NAVIGATION_LINKS = {
 # Name of the theme to use.
 THEME = "ut-ipython"
 
+
 # Below this point, everything is optional
 
 # Post's dates are considered in UTC by default, if you want to use
@@ -170,7 +171,7 @@ PAGES = (
     ("stories/*.md", "", "story.tmpl"),
     ("stories/*.rst", "stories", "story.tmpl"),
     ("stories/*.txt", "stories", "story.tmpl"),
-    ("calendar/*.md", "calendar", "notitle.tmpl"),
+    ("calendar/*.rst", "calendar", "calendar.tmpl"),
     ("cv/*.rst", "cv", "notitle.tmpl"),
     ("repos/*.md", "repos", "notitle.tmpl"),
 )
