@@ -1,10 +1,6 @@
 language: python
-os: 
-  - osx
-before_install:
-  - brew update
-  - brew install python --framework
-  - brew install gfortran
+compiler:
+  - gcc
 python:
   - "2.7"
 # command to install dependencies
