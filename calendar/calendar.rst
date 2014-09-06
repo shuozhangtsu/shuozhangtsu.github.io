@@ -5,6 +5,8 @@
 
 .. raw:: html
 
-   <div id='loading'>loading...</div>
-
-   <div id='calendar'></div>
+   <iframe>
+   <div id='responsive-wrapper'>
+      <div id='calendar'></div>
+   </div>
+   </iframe>
