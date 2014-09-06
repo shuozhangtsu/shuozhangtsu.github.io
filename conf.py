@@ -288,10 +288,12 @@ REDIRECTIONS = []
 # And then do a backup, or run `nikola ping` from the `ping`
 # plugin (`nikola install_plugin ping`).
 # To do manual deployment, set it to []
-DEPLOY_COMMANDS = ['git checkout gh-pages',
+DEPLOY_COMMANDS = ['git pull origin gh-pages:gh-pages',
+                   'git checkout gh-pages',
+                   'cp -R output/* .',
                    'git add -A',
                    'git commit -m "Travis CI autocommit"',
-                   'git push -fq https://${GH_TOKEN}@github.com/$(TRAVIS_REPO_SLUG).git gh-pages > /dev/null'
+#                   'git push -fq https://${GH_TOKEN}@github.com/$(TRAVIS_REPO_SLUG).git gh-pages > /dev/null'
                    'git checkout master'
                   ]
 
