@@ -2,6 +2,7 @@ language: python
 
 before_install:
   - sudo apt-get update -y
+  - sudo apt-get install build-essential -y
   - sudo apt-get install libpython2.7 -y
 python:
   - "2.7"
