@@ -7,11 +7,12 @@ before_install:
 - chmod +x $HOME/pandoc/pandoc
 - pandoc --version
 - rm pandoc-1.12.3.zip
+- git config --global user.email "$GIT_EMAIL"
+- git config --global user.name "$GIT_NAME"
 python:
 - '2.7'
 install:
 - pip install -r requirements.txt
-- pip install travis
 script: nikola build && nikola github_deploy
 env:
   global:
