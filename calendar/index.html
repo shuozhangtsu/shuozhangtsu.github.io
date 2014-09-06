@@ -10,12 +10,13 @@ article: http://ogp.me/ns/article#
     <title>Calendar | John T. Foster</title>
 
                 <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/fullcalendar.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/fullcalendar.print.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
         <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
         <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
         <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
         <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
             <link href="../assets/css/custom.css" rel="stylesheet" type="text/css">
 
                 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
@@ -100,16 +101,67 @@ article: http://ogp.me/ns/article#
             
 <article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article">
     <div class="e-content entry-content" itemprop="articleBody text">
-    <!--
-.. title: Calendar
-.. slug: index
-.. date: 2014-08-06 00:07:20 UTC-05:00
-.. description: Calender
--->
+    
+<div id="responsive-wrapper">
+   <div id="calendar"></div>
+</div>
 
-<iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=jo135s8fnku1ugoml22688q9d4%40group.calendar.google.com&amp;color=%23BF5700&amp;ctz=America%2FChicago" style=" border-width:0 " width="600" height="480" frameborder="0" scrolling="no"></iframe>
     </div>
 </article>
+
+            <script src="../assets/js/moment.min.js"></script>
+            <script src="../assets/js/jquery.min.js"></script>
+            <script src="../assets/js/jquery-ui.min.js"></script>
+            <script src="../assets/js/bootstrap.min.js"></script>
+            <script src="../assets/js/fullcalendar.min.js"></script>
+            <script src="../assets/js/gcal.js"></script>
+        <script src="../assets/js/jquery.colorbox-min.js"></script>
+     
+
+    <script>
+
+    $(document).ready(function() {
+
+        var date = new Date();
+        var d = date.getDate();
+        var m = date.getMonth();
+        var y = date.getFullYear();
+  
+        $('#calendar').fullCalendar({
+
+      theme: true,
+      weekends: false,
+      header: {
+         left: 'prev,next today',
+         center: 'title',
+         right: 'month,agendaWeek,agendaDay'
+     },
+  
+ 	    // Wanda's Shared Calendar
+            // THIS NEEDS TO BE https AND NOT JUST http!
+        events: 'https://www.google.com/calendar/feeds/jo135s8fnku1ugoml22688q9d4%40group.calendar.google.com/public/basic',
+  
+ 	        eventClick: function(event) {
+
+ 		    // opens events in a popup window
+ 		    window.open(event.url, 'gcalevent', 'width=400,height=400');
+ 		    return false;
+ 		    },
+  
+ 		    loading: function(bool) {
+ 		        if (bool) {
+ 			    $('#loading').show();
+  }else{
+  $('#loading').hide();
+  }
+ 		    } 
+  }); 
+    });
+
+</script>
+
+
+
         </div>
         <!--End of body content-->
 
@@ -120,9 +172,12 @@ article: http://ogp.me/ns/article#
     </div>
 </div>
 
+            <script src="../assets/js/moment.min.js"></script>
             <script src="../assets/js/jquery.min.js"></script>
+            <script src="../assets/js/jquery-ui.min.js"></script>
             <script src="../assets/js/bootstrap.min.js"></script>
-        <script src="../assets/js/mathjax.js"></script>
+            <script src="../assets/js/fullcalendar.min.js"></script>
+            <script src="../assets/js/gcal.js"></script>
         <script src="../assets/js/jquery.colorbox-min.js"></script>
      
 
