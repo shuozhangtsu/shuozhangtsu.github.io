@@ -1,6 +1,8 @@
 language: python
-compiler:
-  - gcc
+
+before_install:
+  - apt-get update
+  - apt-get install libpython-dev
 python:
   - "2.7"
 # command to install dependencies
