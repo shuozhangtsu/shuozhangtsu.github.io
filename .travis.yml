@@ -7,6 +7,8 @@ before_install:
 - chmod +x $HOME/pandoc/pandoc
 - pandoc --version
 - rm pandoc-1.12.3.zip
+- git config user.name '${GIT_NAME}'
+- git config user.email '${GIT_EMAIL}'
 python:
 - '2.7'
 install:
@@ -14,4 +16,4 @@ install:
 script: nikola build && nikola deploy
 env:
   global:
-    secure: b8IINF6Lt3lsAMsLmfkGV8lDYpMEIwjTRLce+V3BwFBJZeV2Hc9A1M2RSkFQ5Hc+xjMmjQ1o/SLWaVA8/Wgl/VsDPPMBSq40GWQlSDm3Kxe81PlldJe71i0QNophjhVouLyhxHY3n7MKrx2Yw+Nv1eQGMdJU9XaKlF2HDldTCl0=
+    secure: HUAm7umwxhOTdbbIjSc9P/gEjGlrcAoeOxgzgPfpycFG8yv8YTZ0VToUQ22AeQDMtPnY5WYi5ek7jLy04tN8hnvKoNWE2IxrzIbGDvEnrQjh7MOFIikqu8BWvjlp25Gbu41WyR2TheZLYqYQFh5l5uqVtD0qfpgqsJil+ZML7vk=
