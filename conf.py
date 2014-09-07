@@ -288,7 +288,7 @@ REDIRECTIONS = []
 # And then do a backup, or run `nikola ping` from the `ping`
 # plugin (`nikola install_plugin ping`).
 # To do manual deployment, set it to []
-DEPLOY_COMMANDS = ['git fetch',
+DEPLOY_COMMANDS = ['git fetch --all',
                    'git checkout --track origin/gh-pages',
                    'cp -R output/* .',
                    'git add -A',
