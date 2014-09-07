@@ -1,4 +1,8 @@
 language: python
+branches:
+  only:
+    - master
+    - gh-pages
 before_install:
 - export PATH="$HOME/pandoc:$PATH"
 - mkdir $HOME/pandoc
