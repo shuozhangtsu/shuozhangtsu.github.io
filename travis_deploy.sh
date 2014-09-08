@@ -6,7 +6,7 @@ git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/johntfoster/j
 
 # Commit and Push the Changes
 cd gh-pages
-cp -Rf $HOME/output .
+cp -Rf $HOME/johntfoster/johntfoster-professional-website/output .
 git add -A
 git commit -m "Travis CI autocommit from travis build $TRAVIS_BUILD_NUMBER"
 git push -fq origin gh-pages > /dev/null
