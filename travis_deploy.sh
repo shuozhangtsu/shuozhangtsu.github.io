@@ -4,6 +4,7 @@ git config --global user.email "jfoster@austin.utexas.edu"
 git config --global user.name "John Foster"
 
 # Commit and Push the Changes
+git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/johntfoster/johntfoster-professional-website gh-pages > /dev/null
 cd gh-pages
 cp -Rf $HOME/build/johntfoster/johntfoster-professional-website/output/* .
 git add -A
