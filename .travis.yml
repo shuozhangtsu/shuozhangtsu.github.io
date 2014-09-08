@@ -16,7 +16,7 @@ before_install:
 python:
 - '2.7'
 install:
-- pip install pyzmq --zmq=bundled
+- pip install --zmq=bundled pyzmq
 - pip install -r requirements.txt
 script: nikola build && nikola deploy
 env:
