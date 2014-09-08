@@ -289,6 +289,7 @@ REDIRECTIONS = []
 # plugin (`nikola install_plugin ping`).
 # To do manual deployment, set it to []
 DEPLOY_COMMANDS = ['git checkout --orphan gh-pages',
+                   'git pull origin gh-pages',
                    'cp -R output/* .',
                    'git add -A',
                    'git commit -m "Travis CI autocommit"',
