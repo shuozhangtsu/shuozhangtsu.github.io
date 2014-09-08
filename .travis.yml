@@ -12,7 +12,7 @@ python:
 install:
 - pip install -r requirements.txt
 script: nikola build
-after_success: ./travis_deploy.sh
+after_success: .utilities/travis_deploy.sh
 env:
   global:
     secure: L50Xh5+EjNFQjWbRRksOR4cytok0NQJVxuzpJLaTcrwbPpJHYsFxFMfYWw0x6pK7LnKKGPw3YHzKLH4i9JeIYAtQi649KJqRBrRdFNSnAmazFzJ85tih+swun1WmdMpUvDT/ZjUluVEXzf3XWuat3bJkLlv+IoDClYBPrX+gk0c=
