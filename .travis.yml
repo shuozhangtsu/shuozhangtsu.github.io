@@ -15,4 +15,4 @@ script: nikola build
 after_success: ./travis_deploy.sh
 env:
   global:
-    secure: HUAm7umwxhOTdbbIjSc9P/gEjGlrcAoeOxgzgPfpycFG8yv8YTZ0VToUQ22AeQDMtPnY5WYi5ek7jLy04tN8hnvKoNWE2IxrzIbGDvEnrQjh7MOFIikqu8BWvjlp25Gbu41WyR2TheZLYqYQFh5l5uqVtD0qfpgqsJil+ZML7vk=
+    secure: qTfqUb72XJrUcRrcqMMYUktayJEyWmxUPCeeA8xhj0aGTOskbu9lGjI9UkeLU2is8jxMg1PLakJoXsKP04QvlNqXD0pf9/updBvql41CDTmopJiaz5kVmjejAZN1ygl5zHuziqjTI8VRNvd75vsFJrvQs7aNtag3s3l2RIyyrzA=
