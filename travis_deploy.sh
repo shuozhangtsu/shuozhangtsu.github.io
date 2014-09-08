@@ -1,5 +1,5 @@
 # Get to the Travis build directory, configure git and clone the repo
-ls
+pwd
 cd $HOME
 git config --global user.email "jfoster@austin.utexas.edu"
 git config --global user.name "John Foster"
