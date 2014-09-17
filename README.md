@@ -19,5 +19,3 @@ nikola serve
 ````
 
 and you point browser to `http://localhost:8000`
-
-Rendered site can be viewed <http://johntfoster.github.io/johntfoster-professional-website/>
