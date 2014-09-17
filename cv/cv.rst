@@ -9,7 +9,8 @@
 
 A PDF version of my current CV is available `here`_.
 
-.. _here: https://github.com/johntfoster/CV/raw/master/cv.pdf
+.. _here: https://github.com/johntfoster/CV/blob/master/cv.pdf?raw=true
+
 
 .. raw:: html
    :url: https://raw.githubusercontent.com/johntfoster/CV/master/cv.html
