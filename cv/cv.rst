@@ -9,10 +9,10 @@
 
 A PDF version of my current CV is available `here`_.
 
-.. _here: https://github.com/johntfoster/CV/blob/master/cv.pdf?raw=true
+.. _here: https://raw.githubusercontent.com/johntfoster/CV/travis-build/cv.pdf
 
 
 .. raw:: html
-   :url: https://raw.githubusercontent.com/johntfoster/CV/master/cv.html
+   :url: https://raw.githubusercontent.com/johntfoster/CV/travis-build/cv.html
 
 
