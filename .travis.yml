@@ -16,8 +16,8 @@ after_success:
     #- .utilities/travis_deploy.sh
     # Get to the Travis build directory, configure git and clone the repo
     - cd $HOME
-    - git config --global user.email "travis@travis-ci.org"
-    - git config --global user.name "travis-ci"
+    - git config --global user.email ${GH_EMAIL}
+    - git config --global user.name ${GH_NAME}
 
     # Commit and Push the Changes
     - git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/johntfoster/johntfoster-professional-website gh-pages > /dev/null
@@ -26,6 +26,6 @@ after_success:
     - git add -A
     - git commit -m "Travis CI autocommit from travis build $TRAVIS_BUILD_NUMBER"
     - git push -fq origin gh-pages > /dev/null
-env:
-  global:
-    secure: tdXR4GVS3B6dQu74m211cuZkPIjuI7yFffLRi8QziqwcDXNkptHEzifV3ZnLJd7XSeQjRi+fsx94IYMoLTckWIZCbv8B2Be3Dm0/t4DoldjeFfhi7CnA5nrTF9vrSNslTDX6hTIkJvNDV84Agq7FwzPCMZG784Xu5nmK5GmSZ0Q=
+#env:
+  #global:
+    #secure: tdXR4GVS3B6dQu74m211cuZkPIjuI7yFffLRi8QziqwcDXNkptHEzifV3ZnLJd7XSeQjRi+fsx94IYMoLTckWIZCbv8B2Be3Dm0/t4DoldjeFfhi7CnA5nrTF9vrSNslTDX6hTIkJvNDV84Agq7FwzPCMZG784Xu5nmK5GmSZ0Q=
