@@ -668,7 +668,7 @@ SOCIAL_BUTTONS_CODE = """ """
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
-BODY_END = "
+BODY_END = """
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -678,7 +678,7 @@ BODY_END = "
   ga('create', 'UA-25324596-6', 'auto');
   ga('send', 'pageview');
 </script>
-"
+"""
 
 # The possibility to extract metadata from the filename by using a
 # regular expression.
