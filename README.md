@@ -9,6 +9,7 @@ git clone git@github.com:johntfoster/johntfoster-professional-website.git profes
 cd professional-website
 git submodule init
 git submodule update
+pip install -r requirements.txt
 ````
 
 To build and view locally:
