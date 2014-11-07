@@ -125,7 +125,9 @@ body{
     font-size:14px;
     line-height:1.42857143;
     color:#666E75;
-    background-color:#fff}
+    background-color:#fff
+    text-align: justify;
+}
 input,
 button,
 select,
@@ -1767,7 +1769,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn{height:auto}
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus{color:#fff;background-color:transparent}
 .navbar-inverse .navbar-brand:focus{color:#fff;background-color:transparent}
-.navbar-inverse .navbar-brand #logo {height: 40px;}
+.navbar-inverse .navbar-brand #logo {height: 47px; padding-bottom: 5px}
 .navbar-inverse .navbar-text{color:#999}
 .navbar-inverse .navbar-nav>li>a{color:#FFFFFF}
 .navbar-inverse .navbar-nav>li>a:hover{text-decoration:underline;color:#FFF;background-color:#9C4700}
