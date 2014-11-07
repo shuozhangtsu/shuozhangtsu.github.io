@@ -21,7 +21,7 @@ BLOG_AUTHOR = "John T. Foster"  # (translatable)
 BLOG_TITLE = "John T. Foster"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://johntfoster.github.io/johntfoster-professional-website/"
+SITE_URL = "http://johnfoster.pge.utexas.edu/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://johntfoster.github.io/johntfoster-professional-website/"
