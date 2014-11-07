@@ -5,11 +5,11 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>http://johntfoster.github.io/johntfoster-professional-website/rss.xml</loc>
+  <loc>http://johnfoster.pge.utexas.edu/rss.xml</loc>
   <lastmod>2014-11-07</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://johntfoster.github.io/johntfoster-professional-website/sitemap.xml</loc>
+  <loc>http://johnfoster.pge.utexas.edu/sitemap.xml</loc>
   <lastmod>2014-11-07</lastmod>
  </sitemap>
 </sitemapindex>

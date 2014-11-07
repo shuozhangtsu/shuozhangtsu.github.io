@@ -1,2 +1,2 @@
-Sitemap: http://johntfoster.github.io/johntfoster-professional-website/sitemapindex.xml
+Sitemap: http://johnfoster.pge.utexas.edu/sitemapindex.xml
 
