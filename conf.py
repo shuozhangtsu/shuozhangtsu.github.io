@@ -95,6 +95,7 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/cv/", "CV"),
         ("/calendar/", "Calendar"),
+        ("/courses/", "Courses"),
         ("/repos/", "Paper Repositories"),
         ("http://johntfoster.github.io/", "Personal Blog"),
     ),
@@ -173,6 +174,7 @@ PAGES = (
     ("stories/*.txt", "stories", "story.tmpl"),
     ("calendar/*.rst", "calendar", "calendar.tmpl"),
     ("cv/*.rst", "cv", "notitle.tmpl"),
+    ("courses/*.md", "courses", "notitle.tmpl"),
     ("repos/*.md", "repos", "notitle.tmpl"),
 )
 
