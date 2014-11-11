@@ -5,7 +5,7 @@ Includes CV and other information about me.
 To install:
 
 ````
-git clone git@github.com:johntfoster/johntfoster-professional-website.git professional-website
+git clone git@github.com:johnfoster-pge-utexas/johnfoster-pge-utexas.github.io.git professional-website
 cd professional-website
 git submodule init
 git submodule update
