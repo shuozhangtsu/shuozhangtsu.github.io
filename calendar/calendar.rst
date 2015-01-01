@@ -5,8 +5,6 @@
 
 .. raw:: html
 
-   <iframe>
    <div id='responsive-wrapper'>
       <div id='calendar'></div>
    </div>
-   </iframe>
