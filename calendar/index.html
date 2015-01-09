@@ -9,7 +9,7 @@ article: http://ogp.me/ns/article#
 <meta name="viewport" content="width=device-width">
 <title>Calendar | John T. Foster</title>
 <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="../assets/css/fullcalendar.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/fullcalendar.min.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
@@ -18,11 +18,12 @@ article: http://ogp.me/ns/article#
 <link href="../assets/css/custom.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 <link rel="canonical" href="http://johnfoster.pge.utexas.edu/calendar/index.html">
-<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="og:title" content="Calendar">
-<meta name="og:url" content="http://johnfoster.pge.utexas.edu/calendar/index.html">
-<meta name="og:description" content="Calender">
-<meta name="og:site_name" content="John T. Foster">
-<meta name="og:type" content="article">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta property="og:site_name" content="John T. Foster">
+<meta property="og:title" content="Calendar">
+<meta property="og:url" content="http://johnfoster.pge.utexas.edu/calendar/index.html">
+<meta property="og:description" content="Calender">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2014-08-06T00:07:20-05:00">
 </head>
 <body>
 
@@ -77,53 +78,45 @@ article: http://ogp.me/ns/article#
         <div class="row">
             
 <article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><div class="e-content entry-content" itemprop="articleBody text">
-    
-<div id="responsive-wrapper">
+    <div id="responsive-wrapper">
    <div id="calendar"></div>
 </div>
-
     </div>
-</article><script src="../assets/js/moment.min.js"></script><script src="../assets/js/jquery.min.js"></script><script src="../assets/js/jquery-ui.min.js"></script><script src="../assets/js/bootstrap.min.js"></script><script src="../assets/js/fullcalendar.min.js"></script><script src="../assets/js/gcal.js"></script><script src="../assets/js/jquery.colorbox-min.js"></script><script>
+</article><script src="../assets/js/bootstrap.min.js"></script><script src="../assets/js/moment.min.js"></script><script src="../assets/js/jquery.min.js"></script><script src="../assets/js/fullcalendar.min.js"></script><script src="../assets/js/jquery-ui.min.js"></script><script src="../assets/js/gcal.js"></script><script src="../assets/js/jquery.colorbox-min.js"></script><script>
 
     $(document).ready(function() {
 
-        var date = new Date();
-        var d = date.getDate();
-        var m = date.getMonth();
-        var y = date.getFullYear();
-  
         $('#calendar').fullCalendar({
 
-      theme: true,
-      weekends: false,
-      header: {
-         left: 'prev,next today',
-         center: 'title',
-         right: 'month,agendaWeek,agendaDay'
-     },
-  
-        // THIS NEEDS TO BE https AND NOT JUST http!
-        events: 'https://www.google.com/calendar/feeds/jo135s8fnku1ugoml22688q9d4%40group.calendar.google.com/public/basic',
-        eventBackgroundColor: '#F2A900',
-        eventBorderColor: '#9c4700',
-  
- 	        eventClick: function(event) {
+            theme: true,
+            weekends: false,
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+            },
 
- 		    // opens events in a popup window
- 		    window.open(event.url, 'gcalevent', 'width=400,height=400');
- 		    return false;
- 		    },
-  
- 		    loading: function(bool) {
- 		        if (bool) {
- 			    $('#loading').show();
-  }else{
-  $('#loading').hide();
-  }
- 		    } 
-  }); 
+            googleCalendarApiKey: 'AIzaSyB68ZmmL0y2y9zfgCicaVC8uBGMDwki2pc',
+            events: {
+                googleCalendarId: 'jo135s8fnku1ugoml22688q9d4@group.calendar.google.com',
+                //backgroundColor: '#F2A900',
+                backgroundColor: '#D6D2C4',
+                borderColor: '#9c4700',
+            },
+
+			
+			eventClick: function(event) {
+				// opens events in a popup window
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			
+			loading: function(bool) {
+				$('#loading').toggle(bool);
+            }
+
+        }); 
     });
-
 </script><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -137,11 +130,11 @@ article: http://ogp.me/ns/article#
         <!--End of body content-->
 
         <footer>
-            Contents © 2014         <a href="mailto:jfoster@austin.utexas.edu">John T. Foster</a>      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png"></a><br></footer>
+            Contents © 2015         <a href="mailto:jfoster@austin.utexas.edu">John T. Foster</a>      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a><br></footer>
 </div>
 </div>
 
-            <script src="../assets/js/moment.min.js"></script><script src="../assets/js/jquery.min.js"></script><script src="../assets/js/jquery-ui.min.js"></script><script src="../assets/js/bootstrap.min.js"></script><script src="../assets/js/fullcalendar.min.js"></script><script src="../assets/js/gcal.js"></script><script src="../assets/js/jquery.colorbox-min.js"></script><script>jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><script>
+            <script src="../assets/js/bootstrap.min.js"></script><script src="../assets/js/moment.min.js"></script><script src="../assets/js/jquery.min.js"></script><script src="../assets/js/fullcalendar.min.js"></script><script src="../assets/js/jquery-ui.min.js"></script><script src="../assets/js/gcal.js"></script><script src="../assets/js/jquery.colorbox-min.js"></script><script>jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
