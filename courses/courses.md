@@ -19,3 +19,6 @@ Below are course descriptions and links to course webpages for classes I have ta
 **Course Description**: Formulation, theory, and computer implementation of inelastic finite elements for pressure sensitive and nearly incompressible materials. The targeted physical settings will be the coupled behaviour of pore fluids and deformation of solid materials and the nonlinear elastic-inelastic behaviour of geomaterials.  Additionally, regularization and extended techniques for special treatment of the localization and failure of geomaterials will be discussed.
 
 
+## [Introduction to High-Performance Computing](http://johnfoster.pge.utexas.edu/HPC/)
+
+**Course Description**: Introduction to UNIX (login, shell scripts, editors, file permissions), visualization (software tools, data formats), Parallel programming (numerical libraries, Message Passing Interface, Trilinos).
