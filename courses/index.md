@@ -9,6 +9,10 @@
 
 Below are course descriptions and links to course webpages for classes I have taught or am currently teaching.
 
+## [PGE 323 - Reservoir Engineering III (Simulation)](http://johnfoster.pge.utexas.edu/PGE323M-ResEngineeringIII/)
+
+**Course Description**: Mathematical equations governing fluid flow in reservoirs; numerical methods to solve the equations; numerical reservoir simulation; treatment of wells; history matching; a simulation project performed using a commercial simulator.
+
 ## [PGE 334 - Reservoir Geomechanics](http://johnfoster.pge.utexas.edu/PGE334-ResGeomechanics/)
 
 **Course Description**: Basic stress and strain analysis; pore pressure and in situ stress estimation and measurement; deformation mechanisms in rock; rock fracture description and analysis; wellbore stresses and failure; wellbore stability analysis; fault stability analysis; depletion-induced reservoir deformation; and hydraulic fracturing. Emphasis on applications to petroleum engineering.
