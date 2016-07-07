@@ -8,7 +8,7 @@
 .. template: notitle.tmpl
 
 
-A PDF version of my current CV is available `here (cv.pdf) <https://raw.githubusercontent.com/johntfoster/CV/travis-build/cv.pdf>`_ or in Cockrell School Standard Resume format `here (cv_cockrell.pdf )<https://raw.githubusercontent.com/johntfoster/CV/travis-build/cv_cockrell.pdf>`_
+A PDF version of my current CV is available `here (cv.pdf) <https://raw.githubusercontent.com/johntfoster/CV/travis-build/cv.pdf>`_ or in Cockrell School Standard Resume format `here (cv_cockrell.pdf) <https://raw.githubusercontent.com/johntfoster/CV/travis-build/cv_cockrell.pdf>`_
 
 .. raw:: html
    :url: https://raw.githubusercontent.com/johntfoster/CV/travis-build/cv.html
