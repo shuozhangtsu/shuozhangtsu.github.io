@@ -17,15 +17,15 @@ import time
 
 
 # Data about this site
-BLOG_AUTHOR = "John T. Foster"  # (translatable)
-BLOG_TITLE = "John T. Foster"  # (translatable)
+BLOG_AUTHOR = "Shuo Zhang"  # (translatable)
+BLOG_TITLE = "Shuo Zhang"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://johnfoster.pge.utexas.edu/"
+SITE_URL = "http://shuozhangtsu.us/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://johntfoster.github.io/johntfoster-professional-website/"
-BLOG_EMAIL = "jfoster@austin.utexas.edu"
+BLOG_EMAIL = "shuozhang@berkeley.edu"
 BLOG_DESCRIPTION = "Professional website"  # (translatable)
 
 # Nikola is multilingual!
